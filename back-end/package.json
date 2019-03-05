@@ -1,0 +1,38 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Learn react - backend",
+  "main": "index.js",
+  "scripts": {
+    "startDev": "babel-node src/server.js",
+    "buildDev": "rm -rf dist && webpack --mode development --config webpack.dev.config.js",
+    "build": "rm -rf dist && webpack --mode production --config webpack.prod.config.js",
+    "start": "node ./dist/server.js"
+  },
+  "keywords": [
+    "react",
+    "express",
+    "hobnob"
+  ],
+  "author": "chivitc1",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/node": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/register": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "nodemon": "^1.18.9",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.2.1",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}

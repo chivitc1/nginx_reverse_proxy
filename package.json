@@ -1,0 +1,33 @@
+{
+  "name": "nginx_test",
+  "version": "1.0.0",
+  "description": "Test nginx as reverse proxy running https for web app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "scripts/build.sh",
+    "startWebApi": "scripts/start_webapi.sh",
+    "startWebApp": "scripts/start_webapp.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chivitc1/nginx_reverse_proxy.git"
+  },
+  "keywords": [
+    "nginx",
+    "api-gateway",
+    "reverse",
+    "proxy",
+    "node",
+    "express",
+    "react",
+    "ssl",
+    "https"
+  ],
+  "author": "chi nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chivitc1/nginx_reverse_proxy/issues"
+  },
+  "homepage": "https://github.com/chivitc1/nginx_reverse_proxy#readme"
+}
